@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITRACOM Fertilizers Limited | FOMI Organic-Mineral Fertilizers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-header">
+    <div class="header-container">
+      <div class="brand-wrap">
+        <img src="images/itracom-logo.jpeg" alt="ITRACOM Logo" class="header-logo" onerror="this.style.display='none'" />
+        <a href="#" class="brand">ITRACOM <span>FERTILIZERS</span></a>
+      </div>
+      <p class="tagline">Nala Industrial Area, Dodoma, Tanzania</p>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">ITRACOM <span>FERTILIZERS</span></a>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">FOMI Products</a></li>
+        <li><a href="#plant">Dodoma Plant</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#contact" class="nav-btn">Inquire Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Balanced FOMI Fertilizers for Higher Harvests</h1>
+      <p>
+        Manufactured in Dodoma, Tanzania to combine essential plant nutrients with
+        organic matter for healthier soils, stronger roots, and reliable yields.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">Explore FOMI Range</a>
+        <a href="#calculator" class="btn-secondary">Estimate 50 kg Bags</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About ITRACOM Fertilizers Limited</h2>
+      <p>
+        ITRACOM Fertilizers Limited produces organic-mineral fertilizers in the Nala
+        Industrial Area of Dodoma, Tanzania, serving smallholder farmers, large-scale
+        estates, and authorized agro-dealers across East Africa.
+      </p>
+      <p>
+        By pairing mineral nutrients with organic soil conditioners, FOMI formulations
+        support soil structure, moisture retention, and nutrient efficiency across
+        diverse crop stages and agro-ecological zones.
+      </p>
+    </section>
+
+    <section id="contact" class="card contact-section">
+      <h2>Bulk Order &amp; Distributor Inquiry</h2>
+      <p>Request pricing, availability, or agro-dealer supply details from our team.</p>
+
+      <form id="inquiryForm" class="inquiry-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phoneOrEmail">Phone or Email</label>
+            <input type="text" id="phoneOrEmail" name="phoneOrEmail" placeholder="+255 ... or email@example.com" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="region">Region / Location</label>
+            <input type="text" id="region" name="region" placeholder="e.g., Dodoma, Mbeya, Arusha, Kigali" required />
+          </div>
+
+          <div class="form-group">
+            <label for="productSelect">FOMI Formulation</label>
+            <select id="productSelect" name="productSelect">
+              <option value="FOMI Otesha">FOMI Otesha (Basal Planting)</option>
+              <option value="FOMI Kuzia">FOMI Kuzia (Vegetative Growth)</option>
+              <option value="FOMI Nenepesha">FOMI Nenepesha (Fruiting &amp; Grain Fill)</option>
+              <option value="FOMI Imarisha">FOMI Imarisha (Soil Conditioning)</option>
+              <option value="FOMI T-Blend">FOMI T-Blend (Specialty &amp; Tea)</option>
+              <option value="FOMI Green Cocoa">FOMI Green Cocoa (Cash &amp; Tree Crops)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Order Details / Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Share required bags or tonnage, target crops, and delivery timeline..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit Inquiry</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="products" class="products-section">
+      <div class="section-header">
+        <h2>FOMI Organic-Mineral Fertilizers</h2>
+        <p>Balanced formulations engineered for every stage of crop growth. Click any card for technical details.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button type="button" class="filter-btn active" data-filter="all">All Formulations</button>
+        <button type="button" class="filter-btn" data-filter="basal">Basal Planting</button>
+        <button type="button" class="filter-btn" data-filter="top-dressing">Top Dressing</button>
+        <button type="button" class="filter-btn" data-filter="specialty">Soil &amp; Specialty</button>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-category="basal">
+          <span class="product-tag">Basal Planting</span>
+          <img src="images/fomi-otesha.jpeg" alt="FOMI Otesha 50 kg Bag" class="bag-img" onerror="this.style.display='none'" />
+          <h3>FOMI Otesha</h3>
+          <p class="formula">NPK + Organic Matter + CaO + MgO</p>
+          <p>
+            Applied at planting to stimulate strong root establishment, early
+            vigor, and improved nutrient uptake in cereals, legumes, and vegetables.
+          </p>
+          <ul>
+            <li>Packaging: 50 kg woven bag</li>
+            <li>Application: Planting / Basal</li>
+          </ul>
+        </article>
+
+        <article class="product-card" data-category="top-dressing">
+          <span class="product-tag">Vegetative Growth</span>
+          <img src="images/fomi-kuzia.jpeg" alt="FOMI Kuzia 50 kg Bag" class="bag-img" onerror="this.style.display='none'" />
+          <h3>FOMI Kuzia</h3>
+          <p class="formula">High Nitrogen + Organic Base</p>
+          <p>
+            Supports rapid vegetative canopy development, lush green foliage, and
+            steady growth during early crop establishment.
+          </p>
+          <ul>
+            <li>Packaging: 50 kg woven bag</li>
+            <li>Application: Top Dressing</li>
+          </ul>
+        </article>
+
+        <article class="product-card" data-category="top-dressing">
+          <span class="product-tag">Fruiting &amp; Grain Fill</span>
+          <img src="images/fomi-nenepesha.jpeg" alt="FOMI Nenepesha 50 kg Bag" class="bag-img" onerror="this.style.display='none'" />
+          <h3>FOMI Nenepesha</h3>
+          <p class="formula">Potassium-Enriched Organic-Mineral</p>
+          <p>
+            Promotes flowering, grain plumpness, fruit quality, and strong yield
+            potential during reproductive stages.
+          </p>
+          <ul>
+            <li>Packaging: 50 kg woven bag</li>
+            <li>Application: Top Dressing</li>
+          </ul>
+        </article>
+
+        <article class="product-card" data-category="specialty">
+          <span class="product-tag">Soil Conditioning</span>
+          <h3>FOMI Imarisha</h3>
+          <p class="formula">Calcium + Magnesium + Humic Organic</p>
+          <p>
+            Helps condition acidic or depleted soils, improve soil structure, and
+            enhance long-term fertility and water retention.
+          </p>
+          <ul>
+            <li>Packaging: 50 kg woven bag</li>
+            <li>Application: Soil Amendment</li>
+          </ul>
+        </article>
+
+        <article class="product-card" data-category="specialty">
+          <span class="product-tag">Specialty &amp; Tea</span>
+          <h3>FOMI T-Blend</h3>
+          <p class="formula">Custom NPK + Sulfur + Organic Base</p>
+          <p>
+            Tailored organic-mineral formulation designed to boost leaf flush
+            quality, shoot vigor, and sustained yield in tea estates.
+          </p>
+          <ul>
+            <li>Packaging: 50 kg woven bag</li>
+            <li>Application: Plantation Top Dressing</li>
+          </ul>
+        </article>
+
+        <article class="product-card" data-category="specialty">
+          <span class="product-tag">Cash &amp; Tree Crops</span>
+          <h3>FOMI Green Cocoa</h3>
+          <p class="formula">Potassium + Boron + Zinc + Organic</p>
+          <p>
+            Enriched with essential micronutrients to support pod setting, bean
+            density, and disease resilience in cocoa and perennial tree crops.
+          </p>
+          <ul>
+            <li>Packaging: 50 kg woven bag</li>
+            <li>Application: Seasonal Tree Dressing</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="plant" class="card">
+      <h2>Dodoma Manufacturing Facility</h2>
+      <img src="images/dodoma-plant.jpeg" alt="ITRACOM Fertilizers Manufacturing Plant in Nala, Dodoma" class="section-img" onerror="this.style.display='none'" />
+      <p>
+        Located in the Nala Industrial Area in Dodoma, Tanzania, ITRACOM Fertilizers Limited operates organic-mineral granulation, blending, and 50 kg bagging lines supporting agriculture across Tanzania and East Africa.
+      </p>
+      <p>
+        Our plant produces the FOMI range—including FOMI Otesha, FOMI Kuzia, FOMI Nenepesha, FOMI Imarisha, FOMI T-Blend, and FOMI Green Cocoa—engineered to pair essential plant nutrients with organic matter for healthier soils and stronger yields.
+      </p>
+    </section>
+
+    <section id="calculator" class="card calculator-section">
+      <h2>FOMI 50 kg Bag &amp; Tonnage Estimator</h2>
+      <p>Calculate exact 50 kg bag quantities and metric tonnage for your farm or agro-dealer order.</p>
+
+      <div class="calc-grid">
+        <div class="form-group">
+          <label for="calcCrop">Crop &amp; Recommended Rate</label>
+          <select id="calcCrop">
+            <option value="100">Maize / Sorghum (2 bags / 100 kg per acre)</option>
+            <option value="150">Rice / Paddy (3 bags / 150 kg per acre)</option>
+            <option value="200">Vegetables / Horticulture (4 bags / 200 kg per acre)</option>
+            <option value="150">Coffee / Cocoa / Tree Crops (3 bags / 150 kg per acre)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="calcAcres">Farm Area (Acres)</label>
+          <input type="number" id="calcAcres" min="0.5" step="0.5" value="5" />
+        </div>
+
+        <div class="form-group">
+          <label for="calcProduct">FOMI Formulation</label>
+          <select id="calcProduct">
+            <option value="FOMI Otesha">FOMI Otesha (Basal Planting)</option>
+            <option value="FOMI Kuzia">FOMI Kuzia (Vegetative)</option>
+            <option value="FOMI Nenepesha">FOMI Nenepesha (Grain Fill)</option>
+            <option value="FOMI Imarisha">FOMI Imarisha (Soil Conditioning)</option>
+            <option value="FOMI T-Blend">FOMI T-Blend (Specialty &amp; Tea)</option>
+            <option value="FOMI Green Cocoa">FOMI Green Cocoa (Cash &amp; Tree Crops)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="calc-result-box">
+        <div>
+          <span class="result-label">Estimated Requirement:</span>
+          <h3 id="calcOutput">10 Bags (50 kg each) &bull; 0.50 Metric Tons</h3>
+        </div>
+        <button type="button" id="useEstimateBtn" class="btn-submit">Use in Inquiry Form</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="productModal" class="modal-overlay" aria-hidden="false">
+    <div class="modal-box">
+      <button type="button" id="closeModalBtn" class="modal-close" aria-label="Close Modal">&times;</button>
+      <span id="modalTag" class="product-tag">Category</span>
+      <h2 id="modalTitle">FOMI Product</h2>
+      <p id="modalFormula" class="formula">Nutrient Formula</p>
+      <p id="modalDesc" class="modal-desc">Product description goes here.</p>
+
+      <div class="modal-specs">
+        <p><strong>Recommended Crops:</strong> <span id="modalCrops"></span></p>
+        <p><strong>Application Rate:</strong> <span id="modalRate"></span></p>
+        <p><strong>Standard Packaging:</strong> 50 kg moisture-resistant woven polypropylene bag</p>
+      </div>
+
+      <button type="button" id="modalQuoteBtn" class="btn-submit">Request Quote for This Product</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>ITRACOM <span>FERTILIZERS</span></h3>
+        <p>
+          Manufacturing certified FOMI organic-mineral fertilizers in Nala
+          Industrial Area, Dodoma, Tanzania for sustainable East African agriculture.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Navigation</h4>
+        <ul>
+          <li><a href="#about">About ITRACOM</a></li>
+          <li><a href="#products">FOMI Product Line</a></li>
+          <li><a href="#plant">Dodoma Manufacturing Plant</a></li>
+          <li><a href="#calculator">50 kg Bag Calculator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Headquarters &amp; Plant</h4>
+        <ul>
+          <li>Nala Industrial Area, Dodoma, Tanzania</li>
+          <li>Standards: TFRA &amp; TBS Certified</li>
+          <li>Inquiries: Commercial &amp; Agro-Dealer Desk</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 ITRACOM Fertilizers Limited. Dodoma, Tanzania. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
